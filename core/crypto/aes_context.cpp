@@ -48,7 +48,7 @@ Error AESContext::start(Mode p_mode, const PackedByteArray &p_key, const PackedB
 	} else {
 		ctx.set_decode_key(p_key.ptr(), key_bits);
 	}
-	mode = p_mode;
+	mode = p_mode; // experiment
 	return OK;
 }
 
